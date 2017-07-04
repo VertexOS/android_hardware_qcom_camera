@@ -681,6 +681,9 @@ typedef struct cam_capability{
     char sensor_name[128];
     sensor_res_table_t sensor_res_tbl[MAX_SIZES_CNT];
     size_t sensor_res_tbl_cnt;
+
+    /*Mono Stats support*/
+    uint8_t is_mono_stats_suport;
 } cam_capability_t;
 
 typedef enum {
